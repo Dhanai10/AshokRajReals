@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProperties, createProperty, deleteProperty } from '../services/api';
 import './AdminDashboard.css';
@@ -19,9 +19,9 @@ function AdminDashboard() {
   });
   const navigate = useNavigate();
 
-  useEffect(() => { fetchAll(); }, [fetchAll]);
 
-  const fetchAll = async () => {
+  
+  const fetchAll = useCallback(async () => {
     setLoadingList(true);
     try {
       const res = await getProperties();
@@ -31,7 +31,10 @@ function AdminDashboard() {
     } finally {
       setLoadingList(false);
     }
-  };
+  },[])
+
+  useEffect(() => { fetchAll(); }, [fetchAll]);
+
 
   const showAlert = (type, msg) => {
     setAlert({ type, msg });
