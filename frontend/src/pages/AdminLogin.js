@@ -39,7 +39,7 @@ function AdminLogin() {
         <div className="login-card">
           <div className="login-logo">
             <span className="login-logo-icon">◆</span>
-            <span className="login-logo-text">PRESTIGE<span>ESTATES</span></span>
+            <span className="login-logo-text">ASHOK RAJ <span>REAL</span></span>
           </div>
           <div className="login-divider" />
           <h2 className="login-title">Admin Portal</h2>

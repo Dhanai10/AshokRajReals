@@ -141,7 +141,7 @@ function Home() {
       <section className="features-section">
         <div className="container-xl">
           <div className="text-center mb-5">
-            <span className="section-eyebrow">Why Prestige Estates</span>
+            <span className="section-eyebrow">Why Ashok Raj Reals</span>
             <h2 className="section-title mt-2">The Standard of Excellence</h2>
             <div className="gold-divider mx-auto" />
           </div>
@@ -178,9 +178,9 @@ function Home() {
         <div className="container-xl footer-inner">
           <div className="footer-brand">
             <span className="brand-icon">◆</span>
-            <span className="footer-brand-text">PRESTIGE<span style={{ color: 'var(--gold)' }}>ESTATES</span></span>
+            <span className="footer-brand-text">ASHOK RAJ <span style={{ color: 'var(--gold)' }}>REALS</span></span>
           </div>
-          <p className="footer-copy">© {new Date().getFullYear()} Prestige Estates. All rights reserved.</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Ashok Raj Reals. All rights reserved.</p>
         </div>
       </footer>
     </main>

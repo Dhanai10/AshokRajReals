@@ -56,7 +56,7 @@ function Contact() {
                   { icon: '📞', label: 'Phone', value: '+91 80725 35369' },
                   { icon: '💬', label: 'WhatsApp', value: '+91 98658 28795' },
                   { icon: '✉️', label: 'Email', value: 'sigaramsevatrust@gmail.com' },
-                  { icon: '🕐', label: 'Hours', value: 'Mon–Sat: 9am – 6pm EST' },
+                  { icon: '🕐', label: 'Hours', value: 'Mon–Sat: 9am – 6pm IST' },
                 ].map((item) => (
                   <div key={item.label} className="contact-detail-item">
                     <span className="detail-icon">{item.icon}</span>
