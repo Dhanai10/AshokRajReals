@@ -19,7 +19,7 @@ function AdminDashboard() {
   });
   const navigate = useNavigate();
 
-  useEffect(() => { fetchAll(); }, []);
+  useEffect(() => { fetchAll(); }, [fetchAll]);
 
   const fetchAll = async () => {
     setLoadingList(true);

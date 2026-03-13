@@ -34,6 +34,7 @@ function Home() {
 
   const handleSearch = (filters) => {
     setActiveFilters(filters);
+    console.log(activeFilters);
     fetchProperties(filters);
     document.getElementById('properties')?.scrollIntoView({ behavior: 'smooth' });
   };
